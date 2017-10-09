@@ -336,7 +336,7 @@ you should place your code here."
    web-mode-attr-indent-offset 4)
 
   (with-eval-after-load 'web-mode
-    (add-to-list 'web-mode-indentation-params '("lineup-ternary" . nil)
+    (add-to-list 'web-mode-indentation-params '("lineup-ternary" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
