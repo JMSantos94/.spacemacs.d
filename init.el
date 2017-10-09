@@ -41,7 +41,7 @@ values."
      html
      helm
      auto-completion
-     ;; better-defaults
+     better-defaults
      emacs-lisp
      git
      markdown
@@ -322,6 +322,24 @@ you should place your code here."
   ;;; Deletes region of selected text with any key
   (pending-delete-mode t)
 
+  ;;; Indentation
+  (setq-default
+   ;; json-mode
+   js-indent-level 4
+   ;; js2-mode
+   js2-basic-offset 4
+   ;; web-mode
+   css-indent-offset 4
+   web-mode-markup-indent-offset 4
+   web-mode-css-indent-offset 4
+   web-mode-code-indent-offset 4
+   web-mode-attr-indent-offset 4)
+
+  (with-eval-after-load 'web-mode
+    (add-to-list 'web-mode-indentation-params '("lineup-ternary" . nil)
+    (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
