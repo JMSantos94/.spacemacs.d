@@ -84,7 +84,7 @@ This function should only modify configuration layer settings."
 This function is called at the very beginning of Spacemacs startup,
 before layer configuration.
 It should only modify the values of Spacemacs settings."
-  ;; This setq-default sexp is an exhaustive lisPackage firebelly-theme is unavailable. Is the package name misspelled?t of all the supported
+  ;; This setq-default sexp is an exhaustive list of all the supported
   ;; spacemacs settings.
   (setq-default
    ;; If non-nil ELPA repositories are contacted via HTTPS whenever it's
